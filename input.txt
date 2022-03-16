@@ -4,3 +4,4 @@
 2 7 Blueberry
 2 5 Strawberry
 1 10 Birch
+3 2
