@@ -1,0 +1,6 @@
+1 25 Pine
+2 6 Raspberry
+1 15 Oak
+2 7 Blueberry
+2 5 Strawberry
+1 10 Birch

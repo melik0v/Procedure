@@ -1,0 +1,32 @@
+#pragma once
+#ifndef __Container__
+#define __Container__
+
+#include "Plant.h"
+
+namespace Melikov
+{
+	struct Node
+	{
+		plant* plant;
+		Node* Next;
+		Node* Prev;
+	};
+
+	struct LinkedCircledList
+	{
+		Node* First;
+		Node* Last;
+		size_t SizeList;
+	};
+
+	void Init(LinkedCircledList& obj);
+	void Clear(LinkedCircledList& obj);
+	
+	void LinkedCircledList_In(LinkedCircledList& obj, ifstream& fin);
+	void LinkedCircledList_Out(LinkedCircledList& obj, ofstream& fout);
+	
+
+}
+
+#endif
