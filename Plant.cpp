@@ -10,21 +10,25 @@ namespace Melikov
 	{
 		plant* pt;
 		int k;
+		int hbt;
 		ifst >> k;
 		switch (k) {
 		case 1:
 			pt = new plant;
 			pt->k = plant::key::TREE;
 			In(pt->r, ifst);
-			return pt;
+			break;
 		case 2:
 			pt = new plant;
 			pt->k = plant::key::BUSH;
 			In(pt->t, ifst);
-			return pt;
+			break;
 		default:
 			return 0;
 		}
+		ifst >> hbt;
+		pt->hbt = (plant::habitat)hbt;
+		return pt;
 	}
 
 
@@ -39,6 +43,18 @@ namespace Melikov
 			break;
 		default:
 			ofst << "Incorrect plant!" << endl;
+		}
+		switch (s.hbt)
+		{
+		case 1:
+			ofst << "Habitat = tundra";
+			break;
+		case 2:
+			ofst << "Habitat = desert";
+			break;
+		case 3:
+			ofst << "Habitat = steppe";
+			break;
 		}
 	}
 }
