@@ -7,6 +7,11 @@ It is Bush: month of flowering = July, name = Blueberry
 It is Bush: month of flowering = May, name = Strawberry
 It is Tree: age = 10, name = Birch
 
+It is Tree: age = 25, name = Pine
+It is Tree: age = 15, name = Oak
+It is Tree: age = 10, name = Birch
+
 Empty container. 
 List contains 0 elements
+
 
