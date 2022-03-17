@@ -65,9 +65,10 @@ namespace Melikov
 		for (int i = 0; i < obj.SizeList; i++)
 		{
 			Out(*(Temp->plant), fout);
+			fout << "Consonants = " << consonants(*(Temp->plant)) << endl;
 			Temp = Temp->Next;
 		}
-		fout << endl;
+		fout << endl;	
 	}
 
 }

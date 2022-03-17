@@ -22,6 +22,8 @@ namespace Melikov
 			bush t;
 		};
 	};
+
+	
 	//
 	plant* In(ifstream& ifst);
 	// Сигнатуры требуемых внешних функций

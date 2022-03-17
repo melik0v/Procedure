@@ -41,4 +41,35 @@ namespace Melikov
 			ofst << "Incorrect plant!" << endl;
 		}
 	}
+
+	int consonants(plant& pt) {
+		char consonants[40] = { 'B', 'b', 'C', 'c', 'D', 'd', 'F', 'f', 'G', 'g', 'H', 'h', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'P', 'p', 'Q', 'q',
+		'R', 'r', 'S', 's', 'T', 't', 'V', 'v', 'W', 'w', 'X', 'x', 'Z','z'};
+		char* name = NULL;
+
+		switch (pt.k)
+		{
+		case plant::key::TREE:
+			name = pt.r.name;
+			break;
+		case plant::key::BUSH:
+			name = pt.t.name;
+			break;
+		default:
+			return -1;
+		}
+		int count = 0;
+		for (int i = 0; i < 50; i++)
+		{
+			if (name[i] == '\0')
+				break;
+			for (int j = 0; j < 40; j++)
+			{
+				if (name[i] == consonants[j]) {
+					count++;
+				}
+			}
+		}
+		return count;
+	}
 }
