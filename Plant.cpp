@@ -22,6 +22,11 @@ namespace Melikov
 			pt->k = plant::key::BUSH;
 			In(pt->t, ifst);
 			return pt;
+		case 3:
+			pt = new plant;
+			pt->k = plant::key::FLOWER;
+			In(pt->f, ifst);
+			return pt;
 		default:
 			return 0;
 		}
@@ -36,6 +41,9 @@ namespace Melikov
 			break;
 		case plant::key::BUSH:
 			Out(s.t, ofst);
+			break;
+		case plant::key::FLOWER:
+			Out(s.f, ofst);
 			break;
 		default:
 			ofst << "Incorrect plant!" << endl;

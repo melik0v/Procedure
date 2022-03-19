@@ -1,11 +1,12 @@
 Filled container. 
-List contains 6 elements
+List contains 7 elements
 It is Tree: age = 25, name = Pine
 It is Bush: month of flowering = June, name = Raspberry
 It is Tree: age = 15, name = Oak
 It is Bush: month of flowering = July, name = Blueberry
 It is Bush: month of flowering = May, name = Strawberry
 It is Tree: age = 10, name = Birch
+It is Flower: type = Garden
 
 Empty container. 
 List contains 0 elements
