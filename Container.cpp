@@ -60,7 +60,7 @@ namespace Melikov
 
 	void LinkedCircledList_Out(LinkedCircledList& obj, ofstream& fout)
 	{
-		sort(obj);
+
 		Node* Temp = obj.First;
 		fout << "List contains " << obj.SizeList << " elements" << endl;
 		

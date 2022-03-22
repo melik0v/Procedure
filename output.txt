@@ -2,21 +2,56 @@ Filled container.
 List contains 7 elements
 It is Tree: age = 25, name = Pine
 Habitat = desert
+Consonants = 2
 It is Bush: month of flowering = June, name = Raspberry
 Habitat = tundra
+Consonants = 6
 It is Tree: age = 15, name = Oak
 Habitat = steppe
+Consonants = 1
 It is Bush: month of flowering = July, name = Blueberry
 Habitat = desert
+Consonants = 5
 It is Bush: month of flowering = May, name = Strawberry
 Habitat = steppe
+Consonants = 7
 It is Tree: age = 10, name = Birch
 Habitat = desert
+Consonants = 4
 It is Flower: type = Garden
 Habitat = tundra
+Consonants = 0
 
 It is Tree: age = 25, name = Pine
 It is Tree: age = 15, name = Oak
+It is Tree: age = 10, name = Birch
+
+Sorted container.
+List contains 7 elements
+It is Flower: type = Garden
+Habitat = tundra
+Consonants = 0
+It is Tree: age = 15, name = Oak
+Habitat = steppe
+Consonants = 1
+It is Tree: age = 25, name = Pine
+Habitat = desert
+Consonants = 2
+It is Tree: age = 10, name = Birch
+Habitat = desert
+Consonants = 4
+It is Bush: month of flowering = July, name = Blueberry
+Habitat = desert
+Consonants = 5
+It is Bush: month of flowering = June, name = Raspberry
+Habitat = tundra
+Consonants = 6
+It is Bush: month of flowering = May, name = Strawberry
+Habitat = steppe
+Consonants = 7
+
+It is Tree: age = 15, name = Oak
+It is Tree: age = 25, name = Pine
 It is Tree: age = 10, name = Birch
 
 Empty container. 
