@@ -34,6 +34,7 @@ namespace Melikov
 	void In(flower& f, ifstream& ifst);
 	//
 	void Out(plant& s, ofstream& ofst);
+	void OutTree(plant& s, ofstream& ofst);
 	// Сигнатуры требуемых внешних функций.
 	void Out(tree& r, ofstream& ofst);
 	void Out(bush& t, ofstream& ofst);

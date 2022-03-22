@@ -15,6 +15,11 @@ Habitat = desert
 It is Flower: type = Garden
 Habitat = tundra
 
+It is Tree: age = 25, name = Pine
+It is Tree: age = 15, name = Oak
+It is Tree: age = 10, name = Birch
+
 Empty container. 
 List contains 0 elements
+
 
