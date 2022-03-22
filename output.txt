@@ -1,12 +1,19 @@
 Filled container. 
 List contains 7 elements
 It is Tree: age = 25, name = Pine
+Habitat = desert
 It is Bush: month of flowering = June, name = Raspberry
+Habitat = tundra
 It is Tree: age = 15, name = Oak
+Habitat = steppe
 It is Bush: month of flowering = July, name = Blueberry
+Habitat = desert
 It is Bush: month of flowering = May, name = Strawberry
+Habitat = steppe
 It is Tree: age = 10, name = Birch
+Habitat = desert
 It is Flower: type = Garden
+Habitat = tundra
 
 Empty container. 
 List contains 0 elements

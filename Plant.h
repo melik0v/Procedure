@@ -2,8 +2,6 @@
 using namespace std;
 
 #pragma once
-#ifndef __Plant__
-#define __Plant__
 
 // Подключение необходимых типов данных
 #include "Tree.h"
@@ -39,5 +37,3 @@ namespace Melikov
 	void Out(bush& t, ofstream& ofst);
 	void Out(flower& f, ofstream& ofst);
 }
-
-#endif

@@ -22,12 +22,11 @@ namespace Melikov
 			pt = new plant;
 			pt->k = plant::key::BUSH;
 			In(pt->t, ifst);
-			return pt;
+			break;
 		case 3:
 			pt = new plant;
 			pt->k = plant::key::FLOWER;
 			In(pt->f, ifst);
-			return pt;
 			break;
 		default:
 			return 0;
@@ -56,13 +55,13 @@ namespace Melikov
 		switch (s.hbt)
 		{
 		case 1:
-			ofst << "Habitat = tundra";
+			ofst << "Habitat = tundra" << endl;
 			break;
 		case 2:
-			ofst << "Habitat = desert";
+			ofst << "Habitat = desert" << endl;
 			break;
 		case 3:
-			ofst << "Habitat = steppe";
+			ofst << "Habitat = steppe" << endl;
 			break;
 		}
 	}
