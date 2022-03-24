@@ -1,5 +1,5 @@
 Filled container. 
-List contains 7 elements
+List contains 9 elements
 It is Tree: age = 25, name = Pine
 Habitat = desert
 Consonants = 2
@@ -21,13 +21,20 @@ Consonants = 4
 It is Flower: type = Garden
 Habitat = tundra
 Consonants = 0
+It is Tree: age = 30, name = Maple
+Habitat = tundra
+Consonants = 3
+It is Bush: month of flowering = May, name = Cherry
+Habitat = tundra
+Consonants = 4
 
 It is Tree: age = 25, name = Pine
 It is Tree: age = 15, name = Oak
 It is Tree: age = 10, name = Birch
+It is Tree: age = 30, name = Maple
 
 Sorted container.
-List contains 7 elements
+List contains 9 elements
 It is Flower: type = Garden
 Habitat = tundra
 Consonants = 0
@@ -37,8 +44,14 @@ Consonants = 1
 It is Tree: age = 25, name = Pine
 Habitat = desert
 Consonants = 2
+It is Tree: age = 30, name = Maple
+Habitat = tundra
+Consonants = 3
 It is Tree: age = 10, name = Birch
 Habitat = desert
+Consonants = 4
+It is Bush: month of flowering = May, name = Cherry
+Habitat = tundra
 Consonants = 4
 It is Bush: month of flowering = July, name = Blueberry
 Habitat = desert
@@ -52,6 +65,7 @@ Consonants = 7
 
 It is Tree: age = 15, name = Oak
 It is Tree: age = 25, name = Pine
+It is Tree: age = 30, name = Maple
 It is Tree: age = 10, name = Birch
 
 Empty container. 

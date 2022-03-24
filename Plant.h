@@ -23,6 +23,7 @@ namespace Melikov
 		};
 		enum habitat { TUNDRA = 1, DESERT, STEPPE };
 		habitat hbt;
+		
 	};
 
 	
