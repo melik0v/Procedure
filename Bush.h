@@ -21,7 +21,7 @@ namespace Melikov
 			DECEMBER,
 		};
 		Month mof; // Month of flowering - мес€ц цветени€
-		char name[50]; // название
+		 // название
 	};
 }
 #endif

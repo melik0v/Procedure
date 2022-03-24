@@ -1,72 +1,72 @@
 Filled container. 
 List contains 9 elements
-It is Tree: age = 25, name = Pine
+Name = Pine, It is Tree: age = 25
 Habitat = desert
 Consonants = 2
-It is Bush: month of flowering = June, name = Raspberry
+Name = Raspberry, It is Bush: month of flowering = June
 Habitat = tundra
 Consonants = 6
-It is Tree: age = 15, name = Oak
+Name = Oak, It is Tree: age = 15
 Habitat = steppe
 Consonants = 1
-It is Bush: month of flowering = July, name = Blueberry
+Name = Blueberry, It is Bush: month of flowering = July
 Habitat = desert
 Consonants = 5
-It is Bush: month of flowering = May, name = Strawberry
+Name = Strawberry, It is Bush: month of flowering = May
 Habitat = steppe
 Consonants = 7
-It is Tree: age = 10, name = Birch
+Name = Birch, It is Tree: age = 10
 Habitat = desert
 Consonants = 4
-It is Flower: type = Garden
-Habitat = tundra
-Consonants = 0
-It is Tree: age = 30, name = Maple
+Name = Rose, It is Flower: type = Garden
+Habitat = steppe
+Consonants = 2
+Name = Maple, It is Tree: age = 30
 Habitat = tundra
 Consonants = 3
-It is Bush: month of flowering = May, name = Cherry
+Name = Cherry, It is Bush: month of flowering = May
 Habitat = tundra
 Consonants = 4
 
-It is Tree: age = 25, name = Pine
-It is Tree: age = 15, name = Oak
-It is Tree: age = 10, name = Birch
-It is Tree: age = 30, name = Maple
+Name = Pine, It is Tree: age = 25
+Name = Oak, It is Tree: age = 15
+Name = Birch, It is Tree: age = 10
+Name = Maple, It is Tree: age = 30
 
 Sorted container.
 List contains 9 elements
-It is Flower: type = Garden
-Habitat = tundra
-Consonants = 0
-It is Tree: age = 15, name = Oak
+Name = Oak, It is Tree: age = 15
 Habitat = steppe
 Consonants = 1
-It is Tree: age = 25, name = Pine
+Name = Pine, It is Tree: age = 25
 Habitat = desert
 Consonants = 2
-It is Tree: age = 30, name = Maple
+Name = Rose, It is Flower: type = Garden
+Habitat = steppe
+Consonants = 2
+Name = Maple, It is Tree: age = 30
 Habitat = tundra
 Consonants = 3
-It is Tree: age = 10, name = Birch
+Name = Birch, It is Tree: age = 10
 Habitat = desert
 Consonants = 4
-It is Bush: month of flowering = May, name = Cherry
+Name = Cherry, It is Bush: month of flowering = May
 Habitat = tundra
 Consonants = 4
-It is Bush: month of flowering = July, name = Blueberry
+Name = Blueberry, It is Bush: month of flowering = July
 Habitat = desert
 Consonants = 5
-It is Bush: month of flowering = June, name = Raspberry
+Name = Raspberry, It is Bush: month of flowering = June
 Habitat = tundra
 Consonants = 6
-It is Bush: month of flowering = May, name = Strawberry
+Name = Strawberry, It is Bush: month of flowering = May
 Habitat = steppe
 Consonants = 7
 
-It is Tree: age = 15, name = Oak
-It is Tree: age = 25, name = Pine
-It is Tree: age = 30, name = Maple
-It is Tree: age = 10, name = Birch
+Name = Oak, It is Tree: age = 15
+Name = Pine, It is Tree: age = 25
+Name = Maple, It is Tree: age = 30
+Name = Birch, It is Tree: age = 10
 
 Empty container. 
 List contains 0 elements
