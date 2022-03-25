@@ -13,7 +13,7 @@ namespace Melikov
 	struct plant {
 		plant() {}
 		// значения ключей для каждого из растений
-		enum key { TREE, BUSH, FLOWER };
+		enum key { TREE = 1, BUSH, FLOWER };
 		key k; // ключ
 		// используемые альтернативы
 		union { // используем включение
@@ -40,4 +40,5 @@ namespace Melikov
 	void Out(tree& r, ofstream& ofst);
 	void Out(bush& t, ofstream& ofst);
 	void Out(flower& f, ofstream& ofst);
+	int consonants(plant& pt);
 }

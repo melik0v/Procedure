@@ -1,7 +1,9 @@
 #include <fstream>
 #include "Plant.h"
+#include <string>
+#include <cstdio>
 using namespace std;
-
+#define WRONG_PLANT 0
 namespace Melikov
 {
 
@@ -10,8 +12,15 @@ namespace Melikov
 	{
 		plant* pt;
 		int k;
+		string tmp;
 		int hbt;
-		ifst >> k;
+		ifst >> tmp;
+
+		if (!isdigit(int(tmp.front())) || tmp.length() > 9)
+			k = WRONG_PLANT;
+		else
+			k = stoi(tmp);
+
 		switch (k) {
 		case 1:
 			pt = new plant;
@@ -29,7 +38,10 @@ namespace Melikov
 			In(pt->f, ifst);
 			break;
 		default:
-			return 0;
+			pt = new plant;
+			pt->k = plant::key(WRONG_PLANT);
+			getline(ifst, tmp, '\n');
+			return pt;
 		}
 		ifst >> pt->name >> hbt;
 		pt->hbt = (plant::habitat)hbt;
@@ -39,7 +51,6 @@ namespace Melikov
 
 	// Вывод параметров растений в поток
 	void Out(plant& s, ofstream& ofst) {
-		ofst << "Name = " << s.name << ", ";
 		switch (s.k) {
 		case plant::key::TREE:
 			Out(s.r, ofst);
@@ -52,7 +63,9 @@ namespace Melikov
 			break;
 		default:
 			ofst << "Incorrect plant!" << endl;
+			return;
 		}
+		ofst << "Name = " << s.name << ", ";
 		switch (s.hbt)
 		{
 		case 1:
@@ -65,6 +78,7 @@ namespace Melikov
 			ofst << "Habitat = steppe" << endl;
 			break;
 		}
+		ofst << "Consonants = " << consonants(s) << endl;
 	}
 
 	int consonants(plant& pt) {

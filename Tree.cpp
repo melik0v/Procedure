@@ -1,6 +1,7 @@
 #include <fstream>
 #include "Tree.h"
-
+#include <string>
+#define WRONG_AGE 1
 using namespace std;
 
 namespace Melikov
@@ -8,12 +9,19 @@ namespace Melikov
 
 	// Ввод параметров дерева из файла
 	void In(tree& r, ifstream& ifst) {
-		ifst >> r.age;
+		string temp;
+		ifst >> temp;
+		if (!isdigit(int(temp.front())) || temp.length() > 9)
+			r.age = WRONG_AGE;
+		else
+			r.age = stoi(temp);
 	}
 
 	// Вывод параметров дерева в поток
 	void Out(tree& r, ofstream& ofst) {
-		ofst << "It is Tree: age = " << r.age
-			<< endl;
+		if (r.age == WRONG_AGE)
+			ofst << "Wrong age " << endl;
+		else
+			ofst << "It is Tree: age = " << r.age << endl;
 	}
 }

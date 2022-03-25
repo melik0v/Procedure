@@ -24,6 +24,9 @@ namespace Melikov {
 		case (f.WILD):
 			ofst << "It is Flower: type = " << "Wild" << endl;
 			break;
+		default:
+			ofst << "Wrong flower" << endl;
+			break;
 		}
 	}
 }
