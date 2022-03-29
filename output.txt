@@ -1,6 +1,8 @@
 Filled container. 
 List contains 9 elements
-1 : Incorrect plant!
+1 : It is Tree: age = 25
+Name = Pine, Habitat = tundra
+Consonants = 2
 2 : It is Bush: month of flowering = June
 Name = Raspberry, Habitat = tundra
 Consonants = 6
@@ -17,7 +19,7 @@ Consonants = 7
 Name = Birch, Habitat = desert
 Consonants = 4
 7 : It is Flower: type = Garden
-Name = Rose, Habitat = steppe
+Name = Rose, Habitat = desert
 Consonants = 2
 8 : It is Tree: age = 30
 Name = Maple, Habitat = tundra
@@ -26,18 +28,21 @@ Consonants = 3
 Name = Cherry, Habitat = tundra
 Consonants = 4
 
+Name = Pine, It is Tree: age = 25
 Name = Oak, It is Tree: age = 15
 Name = Birch, It is Tree: age = 10
 Name = Maple, It is Tree: age = 30
 
 Sorted container.
 List contains 9 elements
-1 : Incorrect plant!
-2 : It is Tree: age = 15
+1 : It is Tree: age = 15
 Name = Oak, Habitat = steppe
 Consonants = 1
+2 : It is Tree: age = 25
+Name = Pine, Habitat = tundra
+Consonants = 2
 3 : It is Flower: type = Garden
-Name = Rose, Habitat = steppe
+Name = Rose, Habitat = desert
 Consonants = 2
 4 : It is Tree: age = 30
 Name = Maple, Habitat = tundra
@@ -59,6 +64,7 @@ Name = Strawberry, Habitat = steppe
 Consonants = 7
 
 Name = Oak, It is Tree: age = 15
+Name = Pine, It is Tree: age = 25
 Name = Maple, It is Tree: age = 30
 Name = Birch, It is Tree: age = 10
 

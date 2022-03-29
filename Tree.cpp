@@ -11,10 +11,19 @@ namespace Melikov
 	void In(tree& r, ifstream& ifst) {
 		string temp;
 		ifst >> temp;
-		if (!isdigit(int(temp.front())) || temp.length() > 9)
-			r.age = WRONG_AGE;
-		else
+		bool valid = true;
+		for (int i = 0; i < temp.length(); i++)
+		{
+			if (!isdigit(temp[i]) || i > 9)
+			{
+				r.age = WRONG_AGE;
+				valid = false;
+				break;
+			}
+		}
+		if (valid)
 			r.age = stoi(temp);
+
 	}
 
 	// Вывод параметров дерева в поток

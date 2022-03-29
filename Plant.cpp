@@ -4,6 +4,7 @@
 #include <cstdio>
 using namespace std;
 #define WRONG_PLANT 0
+#define WRONG_HABITAT -1
 namespace Melikov
 {
 
@@ -16,7 +17,9 @@ namespace Melikov
 		int hbt;
 		ifst >> tmp;
 
-		if (!isdigit(int(tmp.front())) || tmp.length() > 9)
+		if (tmp == "\0")
+			return 0;
+		if (!isdigit(int(tmp.front())) || tmp.length() > 1)
 			k = WRONG_PLANT;
 		else
 			k = stoi(tmp);
@@ -43,7 +46,14 @@ namespace Melikov
 			getline(ifst, tmp, '\n');
 			return pt;
 		}
-		ifst >> pt->name >> hbt;
+		ifst >> pt->name;
+		tmp = "";
+		getline(ifst, tmp, '\n');
+		if (tmp != "\0")
+			hbt = stoi(tmp);
+		else
+			hbt = WRONG_HABITAT;
+		//hbt = ifst.get();
 		pt->hbt = (plant::habitat)hbt;
 		return pt;
 	}
@@ -77,6 +87,8 @@ namespace Melikov
 		case 3:
 			ofst << "Habitat = steppe" << endl;
 			break;
+		default:
+			ofst << "Wrong habitat" << endl;
 		}
 		ofst << "Consonants = " << consonants(s) << endl;
 	}
