@@ -2,6 +2,7 @@
 #include "Plant.h"
 #include <string>
 #include <cstdio>
+#include <iostream>
 using namespace std;
 #define WRONG_PLANT 0
 #define WRONG_HABITAT -1
@@ -44,16 +45,16 @@ namespace Melikov
 			pt = new plant;
 			pt->k = plant::key(WRONG_PLANT);
 			getline(ifst, tmp, '\n');
-			return pt;
+			cout << "Wrong plant!" << endl;
+			return 0;
 		}
 		ifst >> pt->name;
 		tmp = "";
-		getline(ifst, tmp, '\n');
-		if (tmp != "\0")
-			hbt = stoi(tmp);
-		else
+		ifst >> hbt;
+		if (ifst.fail())
+		{
 			hbt = WRONG_HABITAT;
-		//hbt = ifst.get();
+		}			
 		pt->hbt = (plant::habitat)hbt;
 		return pt;
 	}

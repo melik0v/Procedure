@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
         return 0;
     }
     ofstream ofst(argv[2]);
-    if (!ifst)
+    if (!ofst)
     {
         cout << "No output file found!" << endl;
         return 0;

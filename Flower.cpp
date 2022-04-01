@@ -1,14 +1,27 @@
 #include "Flower.h"
 #include <fstream>
+#include <string>
+#define WRONG_FLOWER 0
 
 using namespace std;
 
 namespace Melikov {
 	// Ввод параметров цветка из файла
 	void In(flower& f, ifstream& ifst) {
-		int temp;
+		string temp;
 		ifst >> temp;
-		f.tof = (flower::type)temp;
+		bool valid = true;
+		for (int i = 0; i < temp.length(); i++)
+		{
+			if (!isdigit(temp[i]) || i > 9)
+			{
+				f.tof = (flower::type)WRONG_FLOWER;
+				valid = false;
+				return;
+			}
+		}
+		if (valid)
+			f.tof = (flower::type)stoi(temp);
 	}
 
 	// Вывод параметров цветка в поток
