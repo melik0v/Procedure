@@ -24,8 +24,12 @@ namespace Melikov
 			obj.SizeList--;
 		}
 		if (obj.SizeList == 1)
+		{
+			obj.SizeList--;
 			delete obj.First;
-		obj.SizeList--;
+			
+		}
+			
 	}
 
 	void LinkedCircledList_In(LinkedCircledList& obj, ifstream& fin)
