@@ -12,8 +12,9 @@
 #include "../Plant.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Melikov;
 
-namespace Melikov
+namespace lab1_procTest
 {
 	TEST_CLASS(lab1procTest)
 	{
@@ -27,13 +28,24 @@ namespace Melikov
 			pt->r.age = 10;
 			pt->hbt = plant::habitat::STEPPE;
 			string name = "Poplar";
-			//strcpy(pt->r.name, name);
 			pt->name = name;
 
 			int expected = 4;
-			//int actual = 4;
 			int actual = consonants(*pt);
 
+			Assert::AreEqual(expected, actual);
+		}
+
+		TEST_METHOD(compareTest)
+		{
+			plant* first = new plant;
+			plant* second = new plant;
+			first->name = "Maple";
+			second->name = "Oak";
+
+			bool expected = true;
+			bool actual = compare(first, second);
+			
 			Assert::AreEqual(expected, actual);
 		}
 	};
