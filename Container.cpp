@@ -8,115 +8,120 @@ namespace Melikov
 
 	void Init(LinkedCircledList& obj)
 	{
-		obj.First = NULL;
-		obj.Last = obj.First;
-		obj.SizeList = 0;
+		obj._first = NULL;
+		obj._last = obj._first;
+		obj._sizeList = 0;
 	}
 
 	void Clear(LinkedCircledList& obj)
 	{
 		Node* Temp = NULL;
-		while (obj.SizeList > 1)
+		while (obj._sizeList > 1)
 		{
-			Temp = obj.Last->Prev;
-			delete obj.Last;
-			obj.Last = Temp;
-			obj.SizeList--;
+			Temp = obj._last->_prev;
+			delete obj._last;
+			obj._last = Temp;
+			obj._sizeList--;
 		}
-		if (obj.SizeList == 1)
-			delete obj.First;
-		obj.SizeList--;
+		if (obj._sizeList == 1)
+		{
+			delete obj._first;
+			obj._sizeList--;
+		}
 	}
 
-	void LinkedCircledList_In(LinkedCircledList& obj, ifstream& fin)
+	void LinkedCircledListIn(LinkedCircledList& obj, ifstream& fin)
 	{
 		Node* Temp;
-
 		while (!fin.eof())
 		{
 			Temp = new Node;
-			Temp->Next = NULL;
-			Temp->plant = In(fin);
+			Temp->_next = NULL;
+			Temp->_plant = In(fin);
 
-			if (Temp->plant == NULL)
-				break;
-
-			if (obj.First == NULL)
+			if (Temp->_plant == NULL)
 			{
-				obj.First = obj.Last = Temp;
-				Temp->Prev = Temp;
-				Temp->Next = obj.First;
+				break;
+			}
+
+			if (obj._first == NULL)
+			{
+				obj._first = obj._last = Temp;
+				Temp->_prev = Temp;
+				Temp->_next = obj._first;
 			}
 			else
 			{
-				Temp->Prev = obj.Last;
-				obj.Last->Next = Temp;
-				Temp->Next = obj.First;
-				obj.Last = Temp;
+				Temp->_prev = obj._last;
+				obj._last->_next = Temp;
+				Temp->_next = obj._first;
+				obj._last = Temp;
 			}
-			obj.SizeList++;
+			obj._sizeList++;
 		}
 	}
 
-	void LinkedCircledList_Out(LinkedCircledList& obj, ofstream& fout)
+	void LinkedCircledListOut(LinkedCircledList& obj, ofstream& fout)
 	{
 
-		Node* Temp = obj.First;
-		fout << "List contains " << obj.SizeList << " elements" << endl;
+		Node* Temp = obj._first;
+		fout << "List contains " << obj._sizeList << " elements" << endl;
 
-		for (int i = 0; i < obj.SizeList; i++)
+		for (int i = 0; i < obj._sizeList; i++)
 		{
-			Out(*(Temp->plant), fout);
-			fout << "Consonants = " << consonants(*(Temp->plant)) << endl;
-			Temp = Temp->Next;
-
+			Out(*(Temp->_plant), fout);
+			fout << "Consonants = " << Consonants(*(Temp->_plant)) << endl;
+			Temp = Temp->_next;
 		}
 		fout << endl;
-		for (int i = 0; i < obj.SizeList; i++)
+		for (int i = 0; i < obj._sizeList; i++)
 		{
-			OutTree(*(Temp->plant), fout);
-			Temp = Temp->Next;
+			OutTree(*(Temp->_plant), fout);
+			Temp = Temp->_next;
 		}
 		fout << endl;
 	}
 
-	bool compare(plant* first, plant* second) {
-		return consonants(*first) > consonants(*second);
+	bool Compare(Plant* first, Plant* second) 
+	{
+		return Consonants(*first) > Consonants(*second);
 	}
 
-	void sort(LinkedCircledList& obj) {
-		if (obj.SizeList < 2) {
+	void Sort(LinkedCircledList& obj) 
+	{
+		if (obj._sizeList < 2) 
+		{
 			return;
 		}
 
-		Node* current = obj.First;
+		Node* current = obj._first;
 		bool flag = false;
 
 		do
 		{
-			current = obj.First;
+			current = obj._first;
 			flag = false;
-			for (int i = 0; i < (obj.SizeList - 1); ++i)
+			for (int i = 0; i < (obj._sizeList - 1); ++i)
 			{
-				if (compare(current->plant, current->Next->plant))
+				if (Compare(current->_plant, current->_next->_plant))
 				{
-					swap(current, current->Next);
+					Swap(current, current->_next);
 					flag = true;
 				}
 				else
 				{
-					current = current->Next;
+					current = current->_next;
 				}
 			}
 		} while (flag);
 	}
 
-	void swap(Node* first, Node* second) {
-
-		plant* tmp;
-		tmp = first->plant;
-		first->plant = second->plant;
-		second->plant = tmp;
+	void Swap(Node* first, Node* second) 
+	{
+		Plant* tmp;
+		tmp = first->_plant;
+		first->_plant = second->_plant;
+		second->_plant = tmp;
 		return;
 	}
 }

@@ -4,56 +4,56 @@ using namespace std;
 
 namespace Melikov
 {
-
 	// Ввод параметров обобщенной фигуры из файла
-	plant* In(ifstream& ifst)
+	Plant* In(ifstream& ifst)
 	{
-		plant* pt;
-		int k;
-		int hbt;
-		ifst >> k;
-		switch (k) {
+		Plant* pt;
+		int _k;
+		int _hbt;
+		ifst >> _k;
+		switch (_k) {
 		case 1:
-			pt = new plant;
-			pt->k = plant::key::TREE;
-			In(pt->r, ifst);
+			pt = new Plant;
+			pt->_k = Plant::Key::TREE;
+			In(pt->_r, ifst);
 			break;
 		case 2:
-			pt = new plant;
-			pt->k = plant::key::BUSH;
-			In(pt->t, ifst);
+			pt = new Plant;
+			pt->_k = Plant::Key::BUSH;
+			In(pt->_t, ifst);
 			break;
 		case 3:
-			pt = new plant;
-			pt->k = plant::key::FLOWER;
-			In(pt->f, ifst);
+			pt = new Plant;
+			pt->_k = Plant::Key::FLOWER;
+			In(pt->_f, ifst);
 			break;
 		default:
 			return 0;
 		}
-		ifst >> pt->name >> hbt;
-		pt->hbt = (plant::habitat)hbt;
+		ifst >> pt->_name >> _hbt;
+		pt->_hbt = (Plant::Habitat)_hbt;
 		return pt;
 	}
 
 
 	// Вывод параметров растений в поток
-	void Out(plant& s, ofstream& ofst) {
-		ofst << "Name = " << s.name << ", ";
-		switch (s.k) {
-		case plant::key::TREE:
-			Out(s.r, ofst);
+	void Out(Plant& s, ofstream& ofst) 
+	{
+		ofst << "Name = " << s._name << ", ";
+		switch (s._k) {
+		case Plant::Key::TREE:
+			Out(s._r, ofst);
 			break;
-		case plant::key::BUSH:
-			Out(s.t, ofst);
+		case Plant::Key::BUSH:
+			Out(s._t, ofst);
 			break;
-		case plant::key::FLOWER:
-			Out(s.f, ofst);
+		case Plant::Key::FLOWER:
+			Out(s._f, ofst);
 			break;
 		default:
 			ofst << "Incorrect plant!" << endl;
 		}
-		switch (s.hbt)
+		switch (s._hbt)
 		{
 		case 1:
 			ofst << "Habitat = tundra" << endl;
@@ -67,17 +67,21 @@ namespace Melikov
 		}
 	}
 
-	int consonants(plant& pt) {
-		char consonants[40] = { 'B', 'b', 'C', 'c', 'D', 'd', 'F', 'f', 'G', 'g', 'H', 'h', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'P', 'p', 'Q', 'q',
+	int Consonants(Plant& pt) 
+	{
+		char Consonants[40] = { 'B', 'b', 'C', 'c', 'D', 'd', 'F', 'f', 'G', 'g', 'H', 'h', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'P', 'p', 'Q', 'q',
 		'R', 'r', 'S', 's', 'T', 't', 'V', 'v', 'W', 'w', 'X', 'x', 'Z','z' };
 		int count = 0;
 		for (int i = 0; i < 50; i++)
 		{
-			if (pt.name[i] == '\0')
+			if (pt._name[i] == '\0')
+			{
 				break;
+			}
 			for (int j = 0; j < 40; j++)
 			{
-				if (pt.name[i] == consonants[j]) {
+				if (pt._name[i] == Consonants[j]) 
+				{
 					count++;
 				}
 			}
@@ -85,11 +89,13 @@ namespace Melikov
 		return count;
 	}
 
-	void OutTree(plant& s, ofstream& ofst) {
-		switch (s.k) {
-		case plant::key::TREE:
-			ofst << "Name = " << s.name << ", ";
-			Out(s.r, ofst);
+	void OutTree(Plant& s, ofstream& ofst) 
+	{
+		switch (s._k) 
+		{
+		case Plant::Key::TREE:
+			ofst << "Name = " << s._name << ", ";
+			Out(s._r, ofst);
 			break;
 		default:
 			return;

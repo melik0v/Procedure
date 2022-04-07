@@ -7,13 +7,15 @@ namespace Melikov
 {
 
 	// Ввод параметров дерева из файла
-	void In(tree& r, ifstream& ifst) {
-		ifst >> r.age;
+	void In(Tree& _r, ifstream& ifst) 
+	{
+		ifst >> _r._age;
 	}
 
 	// Вывод параметров дерева в поток
-	void Out(tree& r, ofstream& ofst) {
-		ofst << "It is Tree: age = " << r.age
+	void Out(Tree& _r, ofstream& ofst) 
+	{
+		ofst << "It is tree: age = " << _r._age
 			<< endl;
 	}
 }

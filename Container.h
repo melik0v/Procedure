@@ -8,27 +8,27 @@ namespace Melikov
 {
 	struct Node
 	{
-		plant* plant;
-		Node* Next;
-		Node* Prev;
+		Plant* _plant;
+		Node* _next;
+		Node* _prev;
 	};
 
 	struct LinkedCircledList
 	{
-		Node* First;
-		Node* Last;
-		size_t SizeList;
+		Node* _first;
+		Node* _last;
+		size_t _sizeList;
 	};
 
 	void Init(LinkedCircledList& obj);
 	void Clear(LinkedCircledList& obj);
 
-	void LinkedCircledList_In(LinkedCircledList& obj, ifstream& fin);
-	void LinkedCircledList_Out(LinkedCircledList& obj, ofstream& fout);
-	int consonants(plant& pt);
-	void sort(LinkedCircledList& obj);
-	bool compare(plant* first, plant* second);
-	void swap(Node* first, Node* second);
+	void LinkedCircledListIn(LinkedCircledList& obj, ifstream& fin);
+	void LinkedCircledListOut(LinkedCircledList& obj, ofstream& fout);
+	int Consonants(Plant& pt);
+	void Sort(LinkedCircledList& obj);
+	bool Compare(Plant* first, Plant* second);
+	void Swap(Node* first, Node* second);
 
 }
 

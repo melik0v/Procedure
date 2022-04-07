@@ -4,7 +4,7 @@
 namespace Melikov
 {
 	// пр€моугольник
-	struct bush {
+	struct Bush {
 		enum Month
 		{
 			JANUARY = 1,
@@ -20,7 +20,7 @@ namespace Melikov
 			NOVEMBER,
 			DECEMBER,
 		};
-		Month mof; // Month of flowering - мес€ц цветени€
+		Month _mof; // Month of flowering - мес€ц цветени€
 		 // название
 	};
 }

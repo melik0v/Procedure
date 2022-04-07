@@ -32,7 +32,8 @@ using namespace Melikov;
 int main(int argc, char* argv[])
 {
 	setlocale(LC_ALL, "Russian");
-	if (argc != 3) {
+	if (argc != 3) 
+	{
 		cout << "incorrect command line! "
 			"Waited: command infile outfile" << endl;
 		exit(1);
@@ -40,17 +41,17 @@ int main(int argc, char* argv[])
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
 	cout << "Start" << endl;
-	LinkedCircledList c;
-	Init(c);
-	LinkedCircledList_In(c, ifst);
+	LinkedCircledList container;
+	Init(container);
+	LinkedCircledListIn(container, ifst);
 	ofst << "Filled container. " << endl;
-	LinkedCircledList_Out(c, ofst);
+	LinkedCircledListOut(container, ofst);
 	ofst << "Sorted container." << endl;
-	sort(c);
-	LinkedCircledList_Out(c, ofst);
-	Clear(c);
+	Sort(container);
+	LinkedCircledListOut(container, ofst);
+	Clear(container);
 	ofst << "Empty container. " << endl;
-	LinkedCircledList_Out(c, ofst);
+	LinkedCircledListOut(container, ofst);
 	cout << "Stop" << endl;
 	return 0;
 }

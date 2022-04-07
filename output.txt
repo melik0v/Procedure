@@ -1,12 +1,12 @@
 Filled container. 
 List contains 9 elements
-Name = Pine, It is Tree: age = 25
+Name = Pine, It is tree: age = 25
 Habitat = desert
 Consonants = 2
 Name = Raspberry, It is Bush: month of flowering = June
 Habitat = tundra
 Consonants = 6
-Name = Oak, It is Tree: age = 15
+Name = Oak, It is tree: age = 15
 Habitat = steppe
 Consonants = 1
 Name = Blueberry, It is Bush: month of flowering = July
@@ -15,39 +15,39 @@ Consonants = 5
 Name = Strawberry, It is Bush: month of flowering = May
 Habitat = steppe
 Consonants = 7
-Name = Birch, It is Tree: age = 10
+Name = Birch, It is tree: age = 10
 Habitat = desert
 Consonants = 4
-Name = Rose, It is Flower: type = Garden
+Name = Rose, It is flower: type = Garden
 Habitat = steppe
 Consonants = 2
-Name = Maple, It is Tree: age = 30
+Name = Maple, It is tree: age = 30
 Habitat = tundra
 Consonants = 3
 Name = Cherry, It is Bush: month of flowering = May
 Habitat = tundra
 Consonants = 4
 
-Name = Pine, It is Tree: age = 25
-Name = Oak, It is Tree: age = 15
-Name = Birch, It is Tree: age = 10
-Name = Maple, It is Tree: age = 30
+Name = Pine, It is tree: age = 25
+Name = Oak, It is tree: age = 15
+Name = Birch, It is tree: age = 10
+Name = Maple, It is tree: age = 30
 
 Sorted container.
 List contains 9 elements
-Name = Oak, It is Tree: age = 15
+Name = Oak, It is tree: age = 15
 Habitat = steppe
 Consonants = 1
-Name = Pine, It is Tree: age = 25
+Name = Pine, It is tree: age = 25
 Habitat = desert
 Consonants = 2
-Name = Rose, It is Flower: type = Garden
+Name = Rose, It is flower: type = Garden
 Habitat = steppe
 Consonants = 2
-Name = Maple, It is Tree: age = 30
+Name = Maple, It is tree: age = 30
 Habitat = tundra
 Consonants = 3
-Name = Birch, It is Tree: age = 10
+Name = Birch, It is tree: age = 10
 Habitat = desert
 Consonants = 4
 Name = Cherry, It is Bush: month of flowering = May
@@ -63,10 +63,10 @@ Name = Strawberry, It is Bush: month of flowering = May
 Habitat = steppe
 Consonants = 7
 
-Name = Oak, It is Tree: age = 15
-Name = Pine, It is Tree: age = 25
-Name = Maple, It is Tree: age = 30
-Name = Birch, It is Tree: age = 10
+Name = Oak, It is tree: age = 15
+Name = Pine, It is tree: age = 25
+Name = Maple, It is tree: age = 30
+Name = Birch, It is tree: age = 10
 
 Empty container. 
 List contains 0 elements
