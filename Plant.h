@@ -26,7 +26,7 @@ namespace Melikov
 		string name;
 	};
 
-	
+
 	//
 	plant* In(ifstream& ifst);
 	// Сигнатуры требуемых внешних функций

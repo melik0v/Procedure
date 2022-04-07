@@ -31,7 +31,7 @@ namespace Melikov
 	void LinkedCircledList_In(LinkedCircledList& obj, ifstream& fin)
 	{
 		Node* Temp;
-				
+
 		while (!fin.eof())
 		{
 			Temp = new Node;
@@ -63,13 +63,13 @@ namespace Melikov
 
 		Node* Temp = obj.First;
 		fout << "List contains " << obj.SizeList << " elements" << endl;
-		
+
 		for (int i = 0; i < obj.SizeList; i++)
 		{
 			Out(*(Temp->plant), fout);
 			fout << "Consonants = " << consonants(*(Temp->plant)) << endl;
 			Temp = Temp->Next;
-			
+
 		}
 		fout << endl;
 		for (int i = 0; i < obj.SizeList; i++)
@@ -96,9 +96,9 @@ namespace Melikov
 		{
 			current = obj.First;
 			flag = false;
-			for (int i = 0; i < (obj.SizeList - 1); ++i) 
+			for (int i = 0; i < (obj.SizeList - 1); ++i)
 			{
-				if (compare(current->plant, current->Next->plant)) 
+				if (compare(current->plant, current->Next->plant))
 				{
 					swap(current, current->Next);
 					flag = true;
