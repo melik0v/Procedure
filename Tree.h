@@ -5,7 +5,8 @@
 namespace Melikov
 {
 	// дерево
-	struct Tree {
+	struct Tree 
+	{
 		int _age; // возраст
 	};
 }

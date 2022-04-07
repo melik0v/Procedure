@@ -13,10 +13,16 @@ namespace Melikov
 	struct Plant {
 		Plant() {}
 		// значения ключей для каждого из растений
-		enum Key { TREE, BUSH, FLOWER };
+		enum Key 
+		{ 
+			TREE, 
+			BUSH, 
+			FLOWER 
+		};
 		Key _k; // ключ
 		// используемые альтернативы
-		union { // используем включение
+		union 
+		{ // используем включение
 			Tree _r;
 			Bush _t;
 			Flower _f;

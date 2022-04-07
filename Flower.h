@@ -1,10 +1,13 @@
 #pragma once
 
 
-namespace Melikov {
+namespace Melikov 
+{
 	// Flower
-	struct Flower {
-		enum Type {
+	struct Flower 
+	{
+		enum Type 
+		{
 			HOME = 1,
 			GARDEN,
 			WILD,
