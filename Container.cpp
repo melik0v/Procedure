@@ -6,14 +6,14 @@ using namespace std;
 namespace Melikov
 {
 
-	void Init(LinkedCircledList& obj)
+	void Init(Container& obj)
 	{
 		obj._first = NULL;
 		obj._last = obj._first;
 		obj._sizeList = 0;
 	}
 
-	void Clear(LinkedCircledList& obj)
+	void Clear(Container& obj)
 	{
 		Node* temp = NULL;
 		while (obj._sizeList > 1)
@@ -30,7 +30,7 @@ namespace Melikov
 		}
 	}
 
-	void LinkedCircledListIn(LinkedCircledList& obj, ifstream& fin)
+	void ContainerIn(Container& obj, ifstream& fin)
 	{
 		Node* temp;
 		while (!fin.eof())
@@ -61,7 +61,7 @@ namespace Melikov
 		}
 	}
 
-	void LinkedCircledListOut(LinkedCircledList& obj, ofstream& fout)
+	void ContainerOut(Container& obj, ofstream& fout)
 	{
 
 		Node* temp = obj._first;
@@ -87,7 +87,7 @@ namespace Melikov
 		return Consonants(*first) > Consonants(*second);
 	}
 
-	void Sort(LinkedCircledList& obj) 
+	void Sort(Container& obj) 
 	{
 		if (obj._sizeList < 2) 
 		{

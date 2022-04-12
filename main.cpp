@@ -41,17 +41,17 @@ int main(int argc, char* argv[])
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
 	cout << "Start" << endl;
-	LinkedCircledList container;
+	Container container;
 	Init(container);
-	LinkedCircledListIn(container, ifst);
+	ContainerIn(container, ifst);
 	ofst << "Filled container. " << endl;
-	LinkedCircledListOut(container, ofst);
+	ContainerOut(container, ofst);
 	ofst << "Sorted container." << endl;
 	Sort(container);
-	LinkedCircledListOut(container, ofst);
+	ContainerOut(container, ofst);
 	Clear(container);
 	ofst << "Empty container. " << endl;
-	LinkedCircledListOut(container, ofst);
+	ContainerOut(container, ofst);
 	cout << "Stop" << endl;
 	return 0;
 }

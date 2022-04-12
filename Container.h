@@ -13,20 +13,20 @@ namespace Melikov
 		Node* _prev;
 	};
 
-	struct LinkedCircledList
+	struct Container
 	{
 		Node* _first;
 		Node* _last;
 		size_t _sizeList;
 	};
 
-	void Init(LinkedCircledList& obj);
-	void Clear(LinkedCircledList& obj);
+	void Init(Container& obj);
+	void Clear(Container& obj);
 
-	void LinkedCircledListIn(LinkedCircledList& obj, ifstream& fin);
-	void LinkedCircledListOut(LinkedCircledList& obj, ofstream& fout);
+	void ContainerIn(Container& obj, ifstream& fin);
+	void ContainerOut(Container& obj, ofstream& fout);
 	int Consonants(Plant& pt);
-	void Sort(LinkedCircledList& obj);
+	void Sort(Container& obj);
 	bool Compare(Plant* first, Plant* second);
 	void Swap(Node* first, Node* second);
 
