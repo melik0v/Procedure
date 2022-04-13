@@ -5,10 +5,11 @@ using namespace std;
 namespace Melikov
 {
 	// Ввод параметров кустарника из файла
-	void In(bush& t, ifstream& ifst) {
+	bush* In(bush& t, ifstream& ifst) {
 		int temp;
 		ifst >> temp;
 		t.mof = (bush::Month)temp;
+		return &t;
 	}
 
 	// Вывод параметров кусарника в поток

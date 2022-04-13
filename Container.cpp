@@ -72,12 +72,21 @@ namespace Melikov
 			
 		}
 		fout << endl;
+
+	}
+
+	void OutTree(LinkedCircledList& obj, ofstream& ofst)
+	{
+		Node* current = obj.First;
 		for (int i = 0; i < obj.SizeList; i++)
 		{
-			OutTree(*(Temp->plant), fout);
-			Temp = Temp->Next;
+			if (current->plant->k == plant::key::TREE)
+			{
+				Out(*(current->plant), ofst);
+			}
+			current = current->Next;
 		}
-		fout << endl;
+		ofst << endl;
 	}
 
 	bool compare(plant* first, plant* second) {

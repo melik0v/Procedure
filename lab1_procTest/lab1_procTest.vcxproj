@@ -172,6 +172,11 @@
       <Project>{f66fda59-76ae-4dba-8bae-c9f2a26409a3}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Bush_Input.txt" />
+    <Text Include="Flower_Input.txt" />
+    <Text Include="Tree_Input.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

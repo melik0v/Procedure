@@ -1,0 +1,29 @@
+List contains 9 elements
+Name = Oak, It is Tree: age = 15
+Habitat = steppe
+Consonants = 1
+Name = Pine, It is Tree: age = 25
+Habitat = desert
+Consonants = 2
+Name = Rose, It is Flower: type = Garden
+Habitat = steppe
+Consonants = 2
+Name = Maple, It is Tree: age = 30
+Habitat = tundra
+Consonants = 3
+Name = Birch, It is Tree: age = 10
+Habitat = desert
+Consonants = 4
+Name = Cherry, It is Bush: month of flowering = May
+Habitat = tundra
+Consonants = 4
+Name = Blueberry, It is Bush: month of flowering = July
+Habitat = desert
+Consonants = 5
+Name = Raspberry, It is Bush: month of flowering = June
+Habitat = tundra
+Consonants = 6
+Name = Strawberry, It is Bush: month of flowering = May
+Habitat = steppe
+Consonants = 7
+

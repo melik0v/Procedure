@@ -85,8 +85,11 @@ namespace Melikov
 		return count;
 	}
 
-	void OutTree(plant& s, ofstream& ofst) {
-		switch (s.k) {
+	/*void OutTree(plant& s, ofstream& ofst) 
+	{
+
+		switch (s.k) 
+		{
 		case plant::key::TREE:
 			ofst << "Name = " << s.name << ", ";
 			Out(s.r, ofst);
@@ -95,5 +98,5 @@ namespace Melikov
 			return;
 		}
 
-	}
+	}*/
 }

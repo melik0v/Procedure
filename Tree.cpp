@@ -7,8 +7,9 @@ namespace Melikov
 {
 
 	// Ввод параметров дерева из файла
-	void In(tree& r, ifstream& ifst) {
+	tree* In(tree& r, ifstream& ifst) {
 		ifst >> r.age;
+		return &r;
 	}
 
 	// Вывод параметров дерева в поток

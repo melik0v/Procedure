@@ -27,4 +27,15 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Bush_Input.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="Flower_Input.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="Tree_Input.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

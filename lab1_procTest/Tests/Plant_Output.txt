@@ -1,0 +1,2 @@
+Name = Rose, It is Flower: type = Wild
+Habitat = desert

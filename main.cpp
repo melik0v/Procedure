@@ -58,9 +58,11 @@ int main(int argc, char* argv[])
     LinkedCircledList_In(c, ifst);
     ofst << "Filled container. " << endl;
     LinkedCircledList_Out(c, ofst);
+    OutTree(c, ofst);
     ofst << "Sorted container." << endl;
     sort(c);
     LinkedCircledList_Out(c, ofst);
+    OutTree(c, ofst);
     Clear(c);
     ofst << "Empty container. " << endl;
     LinkedCircledList_Out(c, ofst);

@@ -1,0 +1,9 @@
+Name = Pine, It is Tree: age = 25
+Habitat = desert
+Name = Oak, It is Tree: age = 15
+Habitat = steppe
+Name = Birch, It is Tree: age = 10
+Habitat = desert
+Name = Maple, It is Tree: age = 30
+Habitat = tundra
+

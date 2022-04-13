@@ -5,10 +5,11 @@ using namespace std;
 
 namespace Melikov {
 	// Ввод параметров цветка из файла
-	void In(flower& f, ifstream& ifst) {
+	flower* In(flower& f, ifstream& ifst) {
 		int temp;
 		ifst >> temp;
 		f.tof = (flower::type)temp;
+		return &f;
 	}
 
 	// Вывод параметров цветка в поток
