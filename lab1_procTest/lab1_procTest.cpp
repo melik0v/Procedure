@@ -138,7 +138,6 @@ namespace lab1_procTest
 			Assert::AreEqual(int(expected.k), int(actual->k));
 			Assert::AreEqual(int(expected.hbt), int(actual->hbt));
 			Assert::AreEqual(expected.name, actual->name);
-
 		}
 
 		TEST_METHOD(Plant_Output)
