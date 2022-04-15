@@ -124,4 +124,81 @@ namespace Melikov
 		second->_plant = temp;
 		return;
 	}
+
+	void MultiMethod(Container& obj, ofstream& ofst)
+	{
+		Node* temp_node_first = obj._first;
+		Node* temp_node_second = temp_node_first->_next;
+
+		ofst << "Multimethod." << endl;
+		for (int i = 0; i < obj._sizeList - 1; i++)
+		{
+			for (int j = i + 1; j < obj._sizeList; j++)
+			{
+				switch (temp_node_first->_plant->_k)
+				{
+				case Plant::Key::TREE:
+					switch (temp_node_second->_plant->_k)
+					{
+					case Plant::Key::TREE:
+						ofst << "Tree and Tree" << endl;
+						break;
+					case Plant::Key::BUSH:
+						ofst << "Tree and Bush" << endl;
+						break;
+					case Plant::Key::FLOWER:
+						ofst << "Tree and Flower" << endl;
+						break;
+					default:
+						ofst << "Unknown type" << endl;
+						break;
+					}
+					break;
+				case Plant::Key::BUSH:
+					switch (temp_node_second->_plant->_k)
+					{
+					case Plant::Key::TREE:
+						ofst << "Bush and Tree" << endl;
+						break;
+					case Plant::Key::BUSH:
+						ofst << "Bush and Bush" << endl;
+						break;
+					case Plant::Key::FLOWER:
+						ofst << "Bush and Flower" << endl;
+						break;
+					default:
+						ofst << "Unknown type" << endl;
+						break;
+					}
+					break;
+				case Plant::Key::FLOWER:
+					switch (temp_node_second->_plant->_k)
+					{
+					case Plant::Key::TREE:
+						ofst << "Flower and Tree" << endl;
+						break;
+					case Plant::Key::BUSH:
+						ofst << "Flower and Bush" << endl;
+						break;
+					case Plant::Key::FLOWER:
+						ofst << "Flower and Flower" << endl;
+						break;
+					default:
+						ofst << "Unknown type" << endl;
+						break;
+					}
+					break;
+				default:
+					ofst << "Unknown type" << endl;
+					break;
+				}
+				Out(*temp_node_first->_plant, ofst);
+				Out(*temp_node_second->_plant, ofst);
+				ofst << endl;
+				temp_node_second = temp_node_second->_next;
+			}
+			temp_node_first = temp_node_first->_next;
+			temp_node_second = temp_node_first->_next;
+		}
+	}
 }

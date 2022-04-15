@@ -46,6 +46,11 @@ int main(int argc, char* argv[])
 	ContainerIn(container, ifst);
 	ofst << "Filled container. " << endl;
 	ContainerOut(container, ofst);
+	
+	ofst << endl;
+	MultiMethod(container, ofst);
+	ofst << endl;
+
 	ofst << "Sorted container." << endl;
 	Sort(container);
 	ContainerOut(container, ofst);

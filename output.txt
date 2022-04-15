@@ -3,16 +3,16 @@ List contains 9 elements
 Name = Pine, It is tree: age = 25
 Habitat = desert
 Consonants = 2
-Name = Raspberry, It is Bush: month of flowering = June
+Name = Raspberry, It is bush: month of flowering = June
 Habitat = tundra
 Consonants = 6
 Name = Oak, It is tree: age = 15
 Habitat = steppe
 Consonants = 1
-Name = Blueberry, It is Bush: month of flowering = July
+Name = Blueberry, It is bush: month of flowering = July
 Habitat = desert
 Consonants = 5
-Name = Strawberry, It is Bush: month of flowering = May
+Name = Strawberry, It is bush: month of flowering = May
 Habitat = steppe
 Consonants = 7
 Name = Birch, It is tree: age = 10
@@ -24,7 +24,7 @@ Consonants = 2
 Name = Maple, It is tree: age = 30
 Habitat = tundra
 Consonants = 3
-Name = Cherry, It is Bush: month of flowering = May
+Name = Cherry, It is bush: month of flowering = May
 Habitat = tundra
 Consonants = 4
 
@@ -32,6 +32,225 @@ Name = Pine, It is tree: age = 25
 Name = Oak, It is tree: age = 15
 Name = Birch, It is tree: age = 10
 Name = Maple, It is tree: age = 30
+
+
+Multimethod.
+Tree and Bush
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+
+Tree and Tree
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+
+Tree and Bush
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+
+Tree and Bush
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+
+Tree and Tree
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Birch, It is tree: age = 10
+Habitat = desert
+
+Tree and Flower
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+
+Tree and Tree
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+
+Tree and Bush
+Name = Pine, It is tree: age = 25
+Habitat = desert
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
+Bush and Tree
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+
+Bush and Bush
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+
+Bush and Bush
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+
+Bush and Tree
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+Name = Birch, It is tree: age = 10
+Habitat = desert
+
+Bush and Flower
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+
+Bush and Tree
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+
+Bush and Bush
+Name = Raspberry, It is bush: month of flowering = June
+Habitat = tundra
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
+Tree and Bush
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+
+Tree and Bush
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+
+Tree and Tree
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+Name = Birch, It is tree: age = 10
+Habitat = desert
+
+Tree and Flower
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+
+Tree and Tree
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+
+Tree and Bush
+Name = Oak, It is tree: age = 15
+Habitat = steppe
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
+Bush and Bush
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+
+Bush and Tree
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+Name = Birch, It is tree: age = 10
+Habitat = desert
+
+Bush and Flower
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+
+Bush and Tree
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+
+Bush and Bush
+Name = Blueberry, It is bush: month of flowering = July
+Habitat = desert
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
+Bush and Tree
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+Name = Birch, It is tree: age = 10
+Habitat = desert
+
+Bush and Flower
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+
+Bush and Tree
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+
+Bush and Bush
+Name = Strawberry, It is bush: month of flowering = May
+Habitat = steppe
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
+Tree and Flower
+Name = Birch, It is tree: age = 10
+Habitat = desert
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+
+Tree and Tree
+Name = Birch, It is tree: age = 10
+Habitat = desert
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+
+Tree and Bush
+Name = Birch, It is tree: age = 10
+Habitat = desert
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
+Flower and Tree
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+
+Flower and Bush
+Name = Rose, It is flower: type = Garden
+Habitat = steppe
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
+Tree and Bush
+Name = Maple, It is tree: age = 30
+Habitat = tundra
+Name = Cherry, It is bush: month of flowering = May
+Habitat = tundra
+
 
 Sorted container.
 List contains 9 elements
@@ -50,16 +269,16 @@ Consonants = 3
 Name = Birch, It is tree: age = 10
 Habitat = desert
 Consonants = 4
-Name = Cherry, It is Bush: month of flowering = May
+Name = Cherry, It is bush: month of flowering = May
 Habitat = tundra
 Consonants = 4
-Name = Blueberry, It is Bush: month of flowering = July
+Name = Blueberry, It is bush: month of flowering = July
 Habitat = desert
 Consonants = 5
-Name = Raspberry, It is Bush: month of flowering = June
+Name = Raspberry, It is bush: month of flowering = June
 Habitat = tundra
 Consonants = 6
-Name = Strawberry, It is Bush: month of flowering = May
+Name = Strawberry, It is bush: month of flowering = May
 Habitat = steppe
 Consonants = 7
 

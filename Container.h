@@ -30,6 +30,7 @@ namespace Melikov
 	bool Compare(Plant* first, Plant* second);
 	void Swap(Node* first, Node* second);
 
+	void MultiMethod(Container& obj, ofstream& ofst);
 }
 
 #endif
