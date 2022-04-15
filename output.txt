@@ -7,6 +7,53 @@ It is Bush: month of flowering = July, name = Blueberry
 It is Bush: month of flowering = May, name = Strawberry
 It is Tree: age = 10, name = Birch
 
+MultiMethod.
+Tree and Bush
+It is Tree: age = 25, name = Pine
+It is Bush: month of flowering = June, name = Raspberry
+Tree and Tree
+It is Tree: age = 25, name = Pine
+It is Tree: age = 15, name = Oak
+Tree and Bush
+It is Tree: age = 25, name = Pine
+It is Bush: month of flowering = July, name = Blueberry
+Tree and Bush
+It is Tree: age = 25, name = Pine
+It is Bush: month of flowering = May, name = Strawberry
+Tree and Tree
+It is Tree: age = 25, name = Pine
+It is Tree: age = 10, name = Birch
+Bush and Tree
+It is Bush: month of flowering = June, name = Raspberry
+It is Tree: age = 15, name = Oak
+Bush and Bush
+It is Bush: month of flowering = June, name = Raspberry
+It is Bush: month of flowering = July, name = Blueberry
+Bush and Bush
+It is Bush: month of flowering = June, name = Raspberry
+It is Bush: month of flowering = May, name = Strawberry
+Bush and Tree
+It is Bush: month of flowering = June, name = Raspberry
+It is Tree: age = 10, name = Birch
+Tree and Bush
+It is Tree: age = 15, name = Oak
+It is Bush: month of flowering = July, name = Blueberry
+Tree and Bush
+It is Tree: age = 15, name = Oak
+It is Bush: month of flowering = May, name = Strawberry
+Tree and Tree
+It is Tree: age = 15, name = Oak
+It is Tree: age = 10, name = Birch
+Bush and Bush
+It is Bush: month of flowering = July, name = Blueberry
+It is Bush: month of flowering = May, name = Strawberry
+Bush and Tree
+It is Bush: month of flowering = July, name = Blueberry
+It is Tree: age = 10, name = Birch
+Bush and Tree
+It is Bush: month of flowering = May, name = Strawberry
+It is Tree: age = 10, name = Birch
+
 Empty container. 
 List contains 0 elements
 

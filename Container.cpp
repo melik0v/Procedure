@@ -30,7 +30,7 @@ namespace Melikov
 	void LinkedCircledList_In(LinkedCircledList& obj, ifstream& fin)
 	{
 		Node* Temp;
-				
+
 		while (!fin.eof())
 		{
 			Temp = new Node;
@@ -61,7 +61,7 @@ namespace Melikov
 	{
 		Node* Temp = obj.First;
 		fout << "List contains " << obj.SizeList << " elements" << endl;
-		
+
 		for (int i = 0; i < obj.SizeList; i++)
 		{
 			Out(*(Temp->plant), fout);
@@ -70,4 +70,56 @@ namespace Melikov
 		fout << endl;
 	}
 
+	void MultiMethod(LinkedCircledList& obj, ofstream& ofst)
+	{
+		Node* current_first = obj.First;
+		Node* current_second = current_first->Next;
+
+		ofst << "MultiMethod." << endl;
+		for (int i = 0; i < obj.SizeList - 1; i++)
+		{
+			for (int j = i + 1; j < obj.SizeList; j++)
+			{
+				switch (current_first->plant->k)
+				{
+				case plant::key::TREE:
+					switch (current_second->plant->k)
+					{
+					case plant::key::TREE:
+						ofst << "Tree and Tree" << endl;
+						break;
+					case plant::key::BUSH:
+						ofst << "Tree and Bush" << endl;
+						break;
+					default:
+						ofst << "Unknown type" << endl;
+						break;
+					}
+					break;
+				case plant::key::BUSH:
+					switch (current_second->plant->k)
+					{
+					case plant::key::TREE:
+						ofst << "Bush and Tree" << endl;
+						break;
+					case plant::key::BUSH:
+						ofst << "Bush and Bush" << endl;
+						break;
+					default:
+						ofst << "Unknown type" << endl;
+						break;
+					}
+					break;
+				default:
+					ofst << "Unknown type" << endl;
+					break;
+				}
+				Out(*current_first->plant, ofst);
+				Out(*current_second->plant, ofst);
+				current_second = current_second->Next;
+			}
+			current_first = current_first->Next;
+			current_second = current_first->Next;
+		}
+	}
 }

@@ -26,7 +26,7 @@ namespace Melikov
 	void LinkedCircledList_In(LinkedCircledList& obj, ifstream& fin);
 	void LinkedCircledList_Out(LinkedCircledList& obj, ofstream& fout);
 	
-
+	void MultiMethod(LinkedCircledList& obj, ofstream& ofst);
 }
 
 #endif
